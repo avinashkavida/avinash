@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash Kavida | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/portfolio/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!-- Header -->
+     <header>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="bi bi-mortarboard-fill"></i>
+        <a href=""></a>
+    </div>
+    <div class="nav-links">
+      <a href="#hero"><button class="btn btn-primary py-1">Home</button></a>
+      <a href="#skills"><button class="btn btn-primary py-1">Skills</button></a>
+      <a href="#projects"><button class="btn btn-primary py-1">Projects</button></a>
+      <a href="#contact"><button class="btn btn-primary py-1">Contact</button></a>
+    </div>
+  </nav>
+</header>
+ 
+     
+      <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">Hello, I'm</p>
+            <h1 class="hero-title">Avinash <span class="hero-highlight">Kavida</span></h1>
+            <h2 class="hero-title" style="font-size: clamp(1.8rem, 5vw, 3rem); color: var(--gray)">
+                Front-End Web Developer
+            </h2>
+            <p class="hero-description">
+                I create responsive, user-friendly websites with HTML, CSS, and JavaScript. 
+                Passionate about building exceptional digital experiences and always eager to learn new technologies.
+            </p>
+            <div>
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-laptop-code"></i> View Projects
+                </a>
+                <a href="#contact" class="btn btn-outline btn-primary">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+      <!-- Skills Section -->
+    <section id="skills">
+        <div class="projects-container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-title">Front-End</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Design</li>
+                        <li>Bootstrap/Tailwind</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Development</h3>
+                    <ul class="skill-list">
+                        <li>Web Performance</li>
+                        <li>Cross-Browser Testing</li>
+                        <li>Git & GitHub</li>
+                        <li>Debugging</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-title">Tools & Methods</h3>
+                    <ul class="skill-list">
+                        <li>VS Code</li>
+                        <li>Chrome DevTools</li>
+                        <li>Agile Methodology</li>
+                        <li>UI/UX Principles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Adding for Test-->
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Netflix Clone -->
+                <div class="project-card" onclick="openModal('netflix')">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-image">
+                        <img src="image/netflix.jpg" alt="">" alt="Netflix Clone">
+                        <div class="project-overlay">
+                            <h3>View Details</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Netflix UI Clone</h3>
+                        <p class="project-description">
+                            A responsive recreation of Netflix's homepage with interactive elements, 
+                            email signup, and dark theme.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zomato Clone -->
+                <div class="project-card" onclick="openModal('zomato')">
+                    <div class="project-image">
+                        <img src="image/zomato.jpg" alt="Zomato Clone">
+                        <div class="project-overlay">
+                            <h3>View Details</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Zomato Homepage</h3>
+                        <p class="project-description">
+                            A responsive food delivery platform homepage with search functionality 
+                            and restaurant listings.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Flexbox</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project-card" onclick="openModal('portfolio')">
+                    <div class="project-badge">Latest</div>
+                    <div class="project-image">
+                        <img src="image/Portfolio.jpg" alt="Portfolio">
+                        <div class="project-overlay">
+                            <h3>View Details</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-description">
+                            A responsive portfolio website showcasing projects with interactive modals 
+                            and modern design.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Modals -->
+    <!-- Netflix Modal -->
+     <div id="netflix-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="fab fa-netflix"></i> Netflix UI Clone</h3>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                 <img src="image/netflix.jpg" alt="Netflix Clone" class="modal-image">
+                <p class="modal-description">
+                    This Netflix UI Clone is a responsive recreation of the Netflix homepage built with pure HTML, CSS, and JavaScript. 
+                    The project features a dark theme interface, responsive navigation, hero section with call-to-action, 
+                    and an email signup form with validation.
+                </p>
+                <div class="details-grid">
+                    <div class="details-card">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <ul>
+                            <li>Fully responsive design for all devices</li>
+                            <li>Interactive navigation menu with hover effects</li>
+                            <li>Hero section with gradient overlay and call-to-action</li>
+                            <li>Email signup form with validation</li>
+                            <li>Language selection dropdown</li>
+                            <li>Dark theme UI matching Netflix's branding</li>
+                        </ul>
+                    </div>
+                    <div class="details-card">
+                        <h3><i class="fas fa-cog"></i> Technologies Used</h3>
+                        <ul>
+                            <li>HTML5 for semantic structure</li>
+                            <li>CSS3 for styling with Flexbox</li>
+                            <li>JavaScript for interactive elements</li>
+                            <li>Media queries for responsiveness</li>
+                            <li>Font Awesome for icons</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-tech" style="justify-content: center; margin-bottom: 2.5rem;">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                    <span>Flexbox</span>
+                </div>
+                <div class="modal-links">
+                    <a href="#" class="modal-link demo">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="modal-link code">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Zomato Modal -->
+      <div id="zomato-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="fas fa-utensils"></i> Zomato Homepage</h3>
+                <button  class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="image/zomato.jpg" alt="Zomato Clone" class="modal-image">
+                <p class="modal-description">
+                    This Zomato Homepage Clone is a responsive recreation of the popular food delivery platform's interface. 
+                    The project includes a search functionality, restaurant categories, featured sections, 
+                    and a clean food-focused design with proper spacing and typography.
+                </p>
+                <div  class="details-grid">
+                    <div class="details-card">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <ul>
+                           <li>Fully responsive layout with Flexbox</li>
+                            <li>Search functionality with filters</li>
+                            <li>Restaurant category sections</li>
+                            <li>Featured restaurants with ratings</li>
+                            <li>Location-based restaurant discovery</li>
+                            <li>Clean, food-focused UI design</li>
+                        </ul>
+                    </div>
+                    <div class="details-card">
+                        <h3><i class="fas fa-cog"></i> Technologies Used</h3>
+                        <ul>
+                            <li>HTML5 for semantic structure</li>
+                            <li>CSS3 with Flexbox for layout</li>
+                            <li>JavaScript for interactive elements</li>
+                            <li>Responsive design principles</li>
+                            <li>Google Fonts for typography</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-tech" style="justify-content: center; margin-bottom: 2.5rem;">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Flexbox</span>
+                    <span>Responsive Design</span>
+                    <span>UI Design</span>
+                </div>
+                <div class="modal-links">
+                    <a href="#" class="modal-link demo">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="modal-link code">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>
+       <!-- Portfolio Modal -->
+         <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="fas fa-briefcase"></i> Personal Portfolio</h3>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="image/Portfolio.jpg" alt="Portfolio" class="modal-image">
+                <p class="modal-description">
+                    This Personal Portfolio website showcases my projects and skills as a web developer. 
+                    It features a modern design with smooth animations, interactive project modals, 
+                    responsive layout, and a contact section. Built with pure HTML, CSS, and JavaScript.
+                </p>
+                
+                <div class="details-grid">
+                    <div class="details-card">
+                        <h3><i class="fas fa-star"></i> Key Features</h3>
+                        <ul>
+                            <li>Fully responsive design for all devices</li>
+                            <li>Interactive project cards with hover effects</li>
+                            <li>Detailed project modals with animations</li>
+                            <li>Smooth scrolling navigation</li>
+                            <li>Skills section with animated cards</li>
+                            <li>Contact form with validation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-card">
+                        <h3><i class="fas fa-cog"></i> Technologies Used</h3>
+                        <ul>
+                            <li>HTML5 semantic markup</li>
+                            <li>CSS3 with Flexbox and Grid</li>
+                            <li>JavaScript for interactivity</li>
+                            <li>CSS animations and transitions</li>
+                            <li>Font Awesome icons</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-tech" style="justify-content: center; margin-bottom: 2.5rem;">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                    <span>UI/UX</span>
+                </div>
+                
+                <div class="modal-links">
+                    <a href="#" class="modal-link demo">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                    <a href="#" class="modal-link code">
+                        <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+     <section id="contact">
+        <div class="bg-pattern"></div>
+        <div class="contact-container">
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-description">
+                I'm currently looking for new opportunities in web development. Whether you have a project in mind, 
+                want to hire me, or just want to connect - feel free to reach out!
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>avinashkavida2002@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 6305027055</span>
+
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hyderabad, India</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+     </section>
+     <!-- Footer -->
+    <footer>
+        <p class="footer-text">Designed & Built with ❤️ by Avinash Kavida</p>
+        <p class="copyright">© 2023 All Rights Reserved</p>
+    </footer>
+    <script>
+          // Close mobile menu when clicking a link
+          document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                 });
+        });
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Modal functionality
+        function openModal(project) {
+            document.getElementById(`${project}-modal`).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.style.display = 'none';
+            });
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                closeModal();
+            }
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.project-card, .skill-card');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if(elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animation
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.project-card, .skill-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'all 0.6s ease-out';
+            });
+            
+            setTimeout(animateOnScroll, 300);
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+
+    </script>
+</body>
+</html>
