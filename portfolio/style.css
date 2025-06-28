@@ -49,18 +49,33 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1100px;
+            padding: 0 1.5rem;
+            height: 35px;
+            position: relative;
             margin: 0 auto;
+
             
         }
 
         .logo {
+            
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--primary);
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: var(--dark);
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .logo:hover {
+            color: var(--primary);
         }
 
         .logo span {
@@ -114,7 +129,6 @@
              align-items: center;
           background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.15)), 
                         url('./image/img.jpg') no-repeat center center/cover;
-          
 
             max-width: 1200px;
             margin: 0 auto;
@@ -558,13 +572,34 @@
             display: flex;
             justify-content: center;
             gap: 3rem;
-            /* color: white; */
             margin-bottom: 3rem;
             flex-wrap: wrap;
          }
          .contact-item {
+            color: white;
             display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 1.5rem;
+            border-radius: 0.8rem;
+            align-items: center;
+            text-align: center;
          }
+            .contact-item h4 {
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+            .contact-item p {
+                font-size: 1rem;
+                color: var(--gray);
+            }
+            .contact-item a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                transition: var(--transition);
+            }
          .contact-item i{
             background-color: rgba(255, 255, 255, 0.2);
             width: 50px;
@@ -572,13 +607,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             font-size: 1.5rem;
-         }
-         .contact-item a{
-            color: white;
-            text-decoration: none;
-            transition: var(--transition);
          }
          .social-links{
             display: flex;
